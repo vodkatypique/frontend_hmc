@@ -14,9 +14,9 @@ export const store = new Vuex.Store({
     jwt: localStorage.getItem('token'),
     endpoints: {
       // TODO: Remove hardcoding of dev endpoints
-      obtainJWT: 'http://localhost:8080/api/v1/auth/obtain_token/',
-      refreshJWT: 'http://localhost:8080/api/v1/auth/refresh_token/',
-      baseUrl: 'http://localhost:8080/api/v1/'
+      obtainJWT: 'https://vodkatypique.pythonanywhere.com/api/v1/auth/obtain_token/',
+      refreshJWT: 'https://vodkatypique.pythonanywhere.com/api/v1/auth/refresh_token/',
+      baseUrl: 'https://vodkatypique.pythonanywhere.com/api/v1/'
     }
   },
 

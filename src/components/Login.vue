@@ -73,7 +73,9 @@ export default {
               this.$store.commit("setAuthUser",
                 {authUser: response.data, isAuthenticated: true}
               );
-              this.$router.push({name: 'club'})
+              alert(1);
+              this.$router.push('club');
+              alert(2);
             })
 
         })
