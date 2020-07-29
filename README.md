@@ -1,4 +1,4 @@
-# frontend_hmc
+# frontend
 
 ## Project setup
 ```
