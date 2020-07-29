@@ -71,11 +71,9 @@
       console.log(this.currentClub.compo);
       this.currentIndex = index;
     },
-            traitement(id){
-                DataService.patchDate(id);
+            async traitement(id){
+                await DataService.patchDate(id);
                 this.retrieveClubs();
-                this.retrieveFormations();
-                this.retrieveTactics();
             },
 
             async retrieveTactics() {
