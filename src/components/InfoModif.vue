@@ -9,7 +9,7 @@
             @click="setActiveClub(club, index)"
         >
 
-        {{club.club}} {{index}} {{currentIndex}} {{club.id}}
+        {{club.club}}
              <div class="col-md-12" v-if="index==currentIndex">
       <div v-if="currentClub">
         <div>
@@ -74,7 +74,10 @@
             traitement(id){
                 DataService.patchDate(id);
                 this.retrieveClubs();
+                this.retrieveFormations();
+                this.retrieveTactics();
             },
+
             async retrieveTactics() {
         let page = 1;
         this.tactics = [];
